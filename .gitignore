@@ -1,0 +1,19 @@
+# Angular
+frontend-angular/.angular/
+frontend-angular/node_modules/
+frontend-angular/dist/
+
+# Java / Maven
+target/
+*.class
+
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db

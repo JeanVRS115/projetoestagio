@@ -1,0 +1,79 @@
+<p-dialog
+  header="Cadastro de Comércio"
+  [visible]="true"
+  [modal]="true"
+  [closable]="false"
+  [style]="{ width: '35rem' }">
+
+  <div class="flex flex-column gap-2 mb-3">
+    <label for="nomeComercio" class="font-semibold">
+      Nome do comércio
+    </label>
+
+    <input
+      pInputText
+      id="nomeComercio"
+      [(ngModel)]="comercio.nomeComercio"
+      autocomplete="off">
+  </div>
+
+  <div class="flex flex-column gap-2 mb-3">
+    <label for="nomeResponsavel" class="font-semibold">
+      Nome do responsável
+    </label>
+
+    <input
+      pInputText
+      id="nomeResponsavel"
+      [(ngModel)]="comercio.nomeResponsavel"
+      autocomplete="off">
+  </div>
+
+  <div class="flex flex-column gap-2 mb-3">
+    <label for="tipoComercio" class="font-semibold">
+      Tipo de comércio
+    </label>
+
+    <p-dropdown
+      id="tipoComercio"
+      [options]="tiposComercio"
+      optionLabel="label"
+      optionValue="value"
+      placeholder="Selecione o tipo"
+      appendTo="body"
+      [(ngModel)]="comercio.tipoComercio">
+    </p-dropdown>
+  </div>
+
+  <div class="flex flex-column gap-2 mb-4">
+    <label for="cidade" class="font-semibold">
+      Cidade
+    </label>
+
+    <p-dropdown
+      id="cidade"
+      [options]="cidades"
+      optionLabel="nome"
+      optionValue="id"
+      placeholder="Selecione a cidade"
+      appendTo="body"
+      [filter]="true"
+      filterBy="nome"
+      [(ngModel)]="comercio.cidadeId">
+    </p-dropdown>
+  </div>
+
+  <div class="flex justify-content-end gap-2">
+    <p-button
+      label="Cancelar"
+      severity="secondary"
+      (click)="cancelar()">
+    </p-button>
+
+    <p-button
+      label="Salvar"
+      (click)="salvar()">
+    </p-button>
+  </div>
+
+</p-dialog>

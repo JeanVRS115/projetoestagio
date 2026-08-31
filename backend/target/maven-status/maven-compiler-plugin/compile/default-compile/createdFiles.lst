@@ -1,0 +1,16 @@
+com\placeti\avaliacao\mapper\ComercioMapper.class
+com\placeti\avaliacao\service\ProjetoService.class
+com\placeti\avaliacao\mapper\CidadeMapper.class
+com\placeti\avaliacao\dto\ComercioDTO.class
+com\placeti\avaliacao\repository\ComercioRepository.class
+com\placeti\avaliacao\controller\ComercioController.class
+com\placeti\avaliacao\model\Cidade.class
+com\placeti\avaliacao\ProjetoApiApplication.class
+com\placeti\avaliacao\model\Comercio.class
+com\placeti\avaliacao\dto\CidadeDTO.class
+com\placeti\avaliacao\mapper\CidadeMapperImpl.class
+com\placeti\avaliacao\service\ComercioService.class
+com\placeti\avaliacao\model\TipoComercio.class
+com\placeti\avaliacao\controller\CidadeController.class
+com\placeti\avaliacao\repository\CidadeRepository.class
+com\placeti\avaliacao\service\ProjetoServiceTest.class
